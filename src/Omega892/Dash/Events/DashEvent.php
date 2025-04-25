@@ -3,13 +3,13 @@
 namespace Omega892\Dash\Events;
 
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\player\PlayerItemUseEvent;
 use pocketmine\item\VanillaItems;
 use pocketmine\math\Vector3;
 
 class DashEvent implements Listener {
 
-    public function onInteract(PlayerInteractEvent $event): void {
+    public function onItemUse(PlayerItemUseEvent $event): void {
         $player = $event->getPlayer();
         $item = $event->getItem();
 
